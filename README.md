@@ -1,3 +1,6 @@
+# HackBMU-5.0-Team-Ctrl-Alt-Elite
+
+
 The search is over. We present to you ‘Health-A-Plenty’ where you can diagnose any of the main disease such as Heart,Liver Disease, Breast Cancer, Diabetes, Malaria, Pneumonia.
 Also you can check your COVID-19 Symptoms and can get the possibility whether you having COVID or not.
 
