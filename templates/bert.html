@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="footer-tittle" style="font-size: 18px;">
+	
+    {%for i in range(0,prediction|length)%} 
+    <h3>{{item[i]}}:<b>{{prediction[i]}}</b> Accuracy :  [{{similarity[i]}}]<br></h3>
+    {{overview[i]}}
+    <br><br>
+    {%endfor%}
+    
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Predicted Result</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="static/prediction.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+</head>
+<body style='background-image: url("https://images.unsplash.com/photo-1613918108466-292b78a8ef95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=1080");'>
+<!-- partial:index.partial.html -->
+<div class="alan-btn"></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Disease Prediction Result</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="padding-right: 20px;">
+        <a class="btn btn-success " href="{{ url_for('home') }}">Home </a>
+      </li>
+      <a target="_blank" href="https://healthbuddyapp.herokuapp.com/">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Contact Doctor</button>
+      </a>  
+    </form>
+  </div>
+</nav>
+<div class="frame">
+  <div class="circle"></div>
+  <div class="line"></div>
+  <div class="cover cover--top"></div>
+  <div class="cover cover--bottom"></div>
+  <p class="text big">
+    {{greet}}
+  </p>
+  <div class="textcover textcover--top">
+    <div class="small small--top">
+      Your Result
+    </div>
+  </div>
+  <div class="textcover textcover--bottom">
+    <div class="small small--bottom">
+      {{prediction}}
+    </div>
+  </div>
+</div>  
+</body>
+<!-- Firebase Config -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+  <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1OWAs98vA5KO_MbmaZeZYCQHdfZ5deuE",
+        authDomain: "health-a-plenty.firebaseapp.com",
+        projectId: "health-a-plenty",
+        storageBucket: "health-a-plenty.appspot.com",
+        messagingSenderId: "495387763561",
+        appId: "1:495387763561:web:379bc47110e8dbea5653f8"
+      };
+      firebase.initializeApp(firebaseConfig);
+ 
+  </script>
+  <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+  <script>
+   var alanBtnInstance = alanBtn({
+     key: "bdf447dc1dfabc01b33c04cbb5f5074a2e956eca572e1d8b807a3e2338fdd0dc/stage",
+     onCommand: function (commandData) {
+       if (commandData.command === "headache") 
+       {
+          window.location.href="/disease/Backpain_Headache_Wateryeyes_Chestpain"
+       }
+       if (commandData.command === "showapp") 
+       {
+          window.location.href="/viewappointment"
+       }
+       if (commandData.command === "covid") 
+       {
+          window.location.href="/corona"
+       }
+       if (commandData.command === "pharma") 
+       {
+          window.location.href="https://nearbyhospitalapp.herokuapp.com/"
+       }
+       if (commandData.command === "hosp") 
+       {
+          window.location.href= "https://nearbyhospitalapp.herokuapp.com/map"
+       }
+       if (commandData.command === "doconcall") 
+       {
+          window.location.href="https://healthbuddyhap.herokuapp.com/"
+       }
+       if (commandData.command === "firstaid") 
+       {
+          window.location.href="/firstaid"
+       }
+       if (commandData.command === "appoint") 
+       {
+          window.location.href= "/appointmentform"
+       }
+     },
+     rootEl: document.getElementById("alan-btn"),
+   });
+  </script>
+</html>

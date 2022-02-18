@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="static/assets/css/nice-select.css">
 	<link rel="stylesheet" href="static/assets/css/style.css">
 </head>
-<script src="//code.tidio.co/nioqkei40pag42eontipwcv0v5zkavgk.js" async></script>
+ 
 <body>
 	<!--? Preloader Start -->
 	<div id="preloader-active">
@@ -56,7 +56,8 @@
 											<li><a href="{{ url_for('about')}}">About-Us</a></li>
 											<li><a style="cursor:pointer;"> Services</a>
 												<ul class="submenu">
-                                                    <li><a href="breathing/index.html">Breathing Test</a></li><br>
+                                                    <li><a href="{{ url_for('service')}}">Diagnosis</a></li><br>
+
                                                     <li><a href="{{ url_for('corona')}}">Covid Detector</a></li><br>
                                                     <li><a href="https://nearbyhospitalapp.herokuapp.com/">Nearby Pharmacies</a></li><br>
                                                     <li><a href="https://nearbyhospitalapp.herokuapp.com/map">Nearby Hospital</a></li><br>

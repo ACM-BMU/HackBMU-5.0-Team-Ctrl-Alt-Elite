@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Previous Appointment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/x-icon" href="static/assets/img/favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/prev/css/style.css">
+
+	</head>
+	<body onload="checkbook()">
+	<section class="ftco-section">
+		<div class="alan-btn"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Check your Previous Appointment</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-6">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3>Your Appointment</h3>
+									<p class="mb-4">(only 1 recent booking will be saved)</p>
+									<div id="form-message-warning" class="mb-4"></div> 
+
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <span class="form-label">Name :</span><input id="name" class="form-control" type="text" placeholder="Name" disabled>
+							          </div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Phone Number :</span><input id="phone" class="form-control" type="text" placeholder="Phone" disabled>
+										</div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Email ID :</span><input id="email" class="form-control" type="text" placeholder="Email" disabled>
+										</div>
+									</div>
+										</div>
+									</div>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <span class="form-label">Disease :</span><input id="disease" class="form-control" type="email" placeholder="Disease" disabled>
+							          </div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Date :</span><input id="date" class="form-control" type="email" placeholder="Date" disabled>
+										</div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Area :</span><input id="area" class="form-control" type="email" placeholder="Area" disabled>
+										</div>
+									</div>
+										</div>
+									</div>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <span class="form-label">City :</span><input id="city" class="form-control" type="email" placeholder="City" disabled>
+							          </div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">State :</span><input id="state" class="form-control" type="email" placeholder="State" disabled>
+										</div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Pin :</span><input id="pin" class="form-control" type="email" placeholder="Pin Code" disabled>
+										</div>
+									</div>
+										</div>
+									</div>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <span class="form-label">Doctor Name :</span><input class="form-control" id="docname" placeholder="Doctor Name" disabled>
+							          </div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Doctor Email :</span><input class="form-control" id="docemail" placeholder="Doctor Email" disabled>
+										</div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Doctor Phone :</span><input class="form-control" id="docphone" placeholder="Doctor Phone" disabled>
+										</div>
+									</div>
+										</div>
+									</div>
+									<div class="row mb-4">
+										<div class="col-md-4">
+											<div class="dbox w-100 d-flex align-items-start">
+						        		<div class="text">
+							            <span class="form-label">Hospital Name :</span><input class="form-control" id="hpname" placeholder="Hospital Name" disabled>
+							          </div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Hospital Add. :</span><input class="form-control" id="hpaddress" placeholder="Hospital Address" disabled>
+										</div>
+									</div>
+											</div>
+											<div class="col-md-4">
+												<div class="dbox w-100 d-flex align-items-start">
+											<div class="text">
+											<span class="form-label">Timing :</span><input class="form-control" id="app_timing" placeholder="Timing" disabled>
+										</div>
+									</div>
+										</div>
+									</div>
+									<a href="{{ url_for('home')}}"> <input type="submit" value="Home" class="btn btn-primary"></a>
+								</div>
+							</div>
+							<div class="col-lg-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5 img" style="background-image: url('https://images.unsplash.com/photo-1522241112606-b5d35a468795?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');">
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="static/prev/js/jquery.min.js"></script>
+  <script src="static/prev/js/popper.js"></script>
+  <script src="static/prev/js/bootstrap.min.js"></script>
+  <script src="static/prev/js/jquery.validate.min.js"></script>
+  <script src="static/prev/js/main.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	var firebaseConfig = {
+		apiKey: "AIzaSyD1OWAs98vA5KO_MbmaZeZYCQHdfZ5deuE",
+		authDomain: "health-a-plenty.firebaseapp.com",
+		databaseURL: "https://health-a-plenty-default-rtdb.asia-southeast1.firebasedatabase.app",
+		projectId: "health-a-plenty",
+		storageBucket: "health-a-plenty.appspot.com",
+		messagingSenderId: "495387763561",
+		appId: "1:495387763561:web:379bc47110e8dbea5653f8"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+	//---------------------------Print Booking Details-------------------------------------//
+
+	function checkbook(){
+	firebase.auth().onAuthStateChanged(function(user) {
+		if (user) {
+		var user = firebase.auth().currentUser;
+		console.log(user.email);
+		if(user != null){
+	
+			var mail = user.email;
+			name1 = mail.substring(0, mail.lastIndexOf("@"));
+			firebase.database().ref('Appointments/'+name1).on('value',function(snapshot){
+			
+				document.getElementById('name').value = snapshot.val().name;
+				document.getElementById('email').value = snapshot.val().email;
+				document.getElementById('phone').value = snapshot.val().phone;
+				document.getElementById('disease').value = snapshot.val().disease;
+				document.getElementById('date').value = snapshot.val().date;
+				document.getElementById('area').value = snapshot.val().area;
+				document.getElementById('city').value = snapshot.val().city;
+				document.getElementById('state').value = snapshot.val().state;
+				document.getElementById('pin').value = snapshot.val().pincode;
+
+				document.getElementById('docname').value = snapshot.val().Doc_Name;
+				document.getElementById('docemail').value = snapshot.val().Doc_Email;
+				document.getElementById('docphone').value = snapshot.val().Doc_Phone;
+				document.getElementById('hpname').value = snapshot.val().Hosp_Name;
+				document.getElementById('hpaddress').value = snapshot.val().Hosp_add;
+				document.getElementById('app_timing').value = snapshot.val().Time;
+			
+			});
+		}
+	
+		}
+	});
+}
+</script>
+<script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+<script>
+ var alanBtnInstance = alanBtn({
+   key: "bdf447dc1dfabc01b33c04cbb5f5074a2e956eca572e1d8b807a3e2338fdd0dc/stage",
+   onCommand: function (commandData) {
+     if (commandData.command === "headache") 
+     {
+        window.location.href="/disease/Backpain_Headache_Wateryeyes_Chestpain"
+     }
+     if (commandData.command === "showapp") 
+     {
+        window.location.href="/viewappointment"
+     }
+     if (commandData.command === "covid") 
+     {
+        window.location.href="/corona"
+     }
+     if (commandData.command === "pharma") 
+     {
+        window.location.href="https://nearbyhospitalapp.herokuapp.com/"
+     }
+     if (commandData.command === "hosp") 
+     {
+        window.location.href= "https://nearbyhospitalapp.herokuapp.com/map"
+     }
+     if (commandData.command === "doconcall") 
+     {
+        window.location.href="https://healthbuddyhap.herokuapp.com/"
+     }
+     if (commandData.command === "firstaid") 
+     {
+        window.location.href="/firstaid"
+     }
+     if (commandData.command === "appoint") 
+     {
+        window.location.href= "/appointmentform"
+     }
+   },
+   rootEl: document.getElementById("alan-btn"),
+ });
+</script>
+
+</body>
+</html>
+
