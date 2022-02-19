@@ -24,3 +24,33 @@ What we do is with the help of our website you can check your medical status to 
 1. Install all the dependencies using [requirements](requirements.txt) file
 2. Download https://public.ukp.informatik.tu-darmstadt.de/reimers/sentence-transformers/v0.2/roberta-base-nli-stsb-mean-tokens.zip and unzip the contents into a 'model' folder and put it in the same path as **healthcare_app.py**
 3. Now you can the main Website by heading toward **healthcare_app.py** file. Simply run the file in any Code Editor (VS Code, Py Charm, etc..)
+
+
+```python
+$ python healthcare_app.py
+```
+     
+ ## Home
+ ![Website Home Page](SS/1.PNG)
+ 
+ ## Diagnose Section
+ ![Diagnose Section](SS/2.PNG)
+ 
+  ## COVID-19 Detecttor
+ ![COVID-19 Detector](SS/3.PNG)
+ 
+  ## First-Aid Section
+ ![First-Aid Section](SS/4.PNG)
+  
+  ## Contact Section
+ ![Contact Section](SS/5.PNG)
+ 
+  ## Book an Appointment
+ ![Appointment Section](SS/6.PNG)
+   
+  ## Nearby Hospital
+ ![Nearby Hospital](SS/7.PNG)
+ 
+  ## Nearby Pharmacies
+ ![Nearby Pharmacies](SS/8.PNG)
+
