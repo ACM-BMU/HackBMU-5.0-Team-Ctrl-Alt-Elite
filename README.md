@@ -22,4 +22,6 @@ What we do is with the help of our website you can check your medical status to 
 
 ## How to Run :
 1. Install all the dependencies using [requirements](requirements.txt) file
-2. Now you can the main Website by heading toward **healthcare_app.py** file. Simply run the file in any Code Editor (VS Code, Py Charm, etc..)
+2. Download https://public.ukp.informatik.tu-darmstadt.de/reimers/sentence-transformers/v0.2/roberta-base-nli-stsb-mean-tokens.zip and unzip the contents into a 'model' folder and put it in the same path as **healthcare_app.py**
+<li> download cardio.sav from here https://drive.google.com/file/d/1Yx59_Tt58QAg3JSU8572jA0Qnh7dmpse/view?usp=sharing and put it in the same path as app.py
+3. Now you can the main Website by heading toward **healthcare_app.py** file. Simply run the file in any Code Editor (VS Code, Py Charm, etc..)
