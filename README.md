@@ -14,7 +14,7 @@ $ pip install -r requirements.txt
 ## Our Inspirarion
 As we look into the current scenario of the modern world, it's clearly visible that people are comparitively falling ill and though the death ratio is comparitively decreasing but still at a very low rate compared to what it can be. The one main reason of this is the lack of proper knowledge and a regularity check on your health. 
 
-What we do is with the help of our website you can check your medical status to ensure that you are completely safe or may require a doctor for your current health status. Due to unavailability of proper resources we still have access to only some of the major diseases like some heart disease, liver disease, malaria, pneumonia, breast cancer and the most common one diabetes.
+What we do is with the help of our website you can check your medical status to ensure that you are completely safe or may require a doctor for your current health status. Due to unavailability of proper resources we still have access to only some of the major diseases like some heart disease, liver disease, malaria, pneumonia, skin cancer and the most common one diabetes. We have voice assistant to navigate through our website and to book appointments which make our website seamless.
 
 
 ![Logo](logo.png)
