@@ -12,6 +12,11 @@ from flask_cors import  cross_origin
 from skin import predict
 
 
+model_heartdisease = pickle.load(open('heartdisease.pkl', 'rb'))
+model_liverdisease = pickle.load(open('liverdisease.pkl', 'rb'))
+model_cancer = pickle.load(open('breastcancer.pkl', 'rb'))
+model_malaria = load_model('malariadisease.h5')
+model_pneumonia = load_model('pneumonia_disease.h5')
 
 app = Flask(__name__)
 
