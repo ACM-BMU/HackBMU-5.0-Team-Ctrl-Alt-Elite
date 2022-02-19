@@ -30,27 +30,20 @@ What we do is with the help of our website you can check your medical status to 
 $ python healthcare_app.py
 ```
      
- ## Home
- ![Website Home Page](SS/1.PNG)
+
+ ![Website Home Page](SS/s1.PNG)
+
+ ![Diagnose Section](SS/s2.PNG)
+
+ ![COVID-19 Detector](SS/s3.PNG)
  
- ## Diagnose Section
- ![Diagnose Section](SS/2.PNG)
- 
-  ## COVID-19 Detecttor
- ![COVID-19 Detector](SS/3.PNG)
- 
-  ## First-Aid Section
- ![First-Aid Section](SS/4.PNG)
+ ![First-Aid Section](SS/s4.PNG)
   
-  ## Contact Section
- ![Contact Section](SS/5.PNG)
+ ![Contact Section](SS/s5.PNG)
  
-  ## Book an Appointment
- ![Appointment Section](SS/6.PNG)
+ ![Appointment Section](SS/s6.PNG)
    
-  ## Nearby Hospital
- ![Nearby Hospital](SS/7.PNG)
- 
-  ## Nearby Pharmacies
- ![Nearby Pharmacies](SS/8.PNG)
+ ![Nearby Hospital](SS/s7.PNG)
+
+ ![Nearby Pharmacies](SS/s8.PNG)
 
