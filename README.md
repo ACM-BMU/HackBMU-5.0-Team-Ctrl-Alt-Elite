@@ -44,6 +44,3 @@ $ python healthcare_app.py
  ![Appointment Section](SS/s6.PNG)
    
  ![Nearby Hospital](SS/s7.PNG)
-
- ![Nearby Pharmacies](SS/s8.PNG)
-
